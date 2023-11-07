@@ -25,4 +25,6 @@ if __name__ == "__main__":
         print(" На ноль делить нельзя!")
         py_logger.exception("ZeroDivisionError")
         raise SystemExit("Зафиксирована попытка деления на ноль. Выход. ")
+    finally:
+        print("строка из блока finally")
     print("завершение работы")
