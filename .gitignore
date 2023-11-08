@@ -2,9 +2,11 @@
 /*/*.log
 /*/*.doc#
 /*/*.odt#
+/*/*.txt
+/*/*.csv
 /*/*test*
 /*/*.odt
-/*/*.png
+*.png
 .mypy_cache/*
 */__pycache__/
 /troubles/*
