@@ -2,8 +2,10 @@ if __name__ == "__main__":
     for i in range(101):
         print(f"{i}", end=" ")
     print(" ")
+    
     # input("Нажмите ENTER для продолжения...")
 
+    print('Таблица умножения')    
     s = "mul|"
     for i in range(10):
         s = s + "{:>4d}".format(i)
