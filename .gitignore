@@ -5,6 +5,7 @@
 *.txt
 */t4_if_else/sol_game.py
 /*/*.csv
+test/
 /*/*test*
 /*/*.odt
 */venv/*
