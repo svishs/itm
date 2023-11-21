@@ -1,4 +1,3 @@
-import pandas as pd
 
 if __name__ == "__main__":
     file = open("lorum.txt", encoding="utf8")

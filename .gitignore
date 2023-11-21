@@ -13,3 +13,5 @@ test/*
 .mypy_cache/*
 */__pycache__/
 /troubles/*
+.idea/
+*/.idea/
