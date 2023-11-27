@@ -1,4 +1,4 @@
-from MeansOfTransport import MeansOfTransport
+from meansoftransport import MeansOfTransport
 
 
 class Moped(MeansOfTransport):
