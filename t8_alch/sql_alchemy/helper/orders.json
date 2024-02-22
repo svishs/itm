@@ -1,0 +1,72 @@
+[
+	{
+		"emp_id" : 10,
+		"prod_id" : 7,
+		"reg_date" : "2023-12-24",
+		"cl_id" : 10,
+		"date_of_completion" : null
+	},
+	{
+		"emp_id" : 8,
+		"prod_id" : 2,
+		"reg_date" : "2023-02-01",
+		"cl_id" : 2,
+		"date_of_completion" : null
+	},
+	{
+		"emp_id" : 9,
+		"prod_id" : 2,
+		"reg_date" : "2023-03-01",
+		"cl_id" : 3,
+		"date_of_completion" : null
+	},
+	{
+		"emp_id" : 8,
+		"prod_id" : 3,
+		"reg_date" : "2023-04-01",
+		"cl_id" : 4,
+		"date_of_completion" : null
+	},
+	{
+		"emp_id" : 10,
+		"prod_id" : 4,
+		"reg_date" : "2023-05-01",
+		"cl_id" : 5,
+		"date_of_completion" : null
+	},
+	{
+		"emp_id" : 10,
+		"prod_id" : 1,
+		"reg_date" : "2023-06-01",
+		"cl_id" : 5,
+		"date_of_completion" : null
+	},
+	{
+		"emp_id" : 9,
+		"prod_id" : 10,
+		"reg_date" : "2023-07-01",
+		"cl_id" : 10,
+		"date_of_completion" : null
+	},
+	{
+		"emp_id" : 8,
+		"prod_id" : 9,
+		"reg_date" : "2023-08-01",
+		"cl_id" : 10,
+		"date_of_completion" : null
+	},
+	{
+		"emp_id" : 10,
+		"prod_id" : 8,
+		"reg_date" : "2023-09-01",
+		"cl_id" : 10,
+		"date_of_completion" : null
+	},
+	{
+		"emp_id" : 8,
+		"prod_id" : 1,
+		"reg_date" : "2023-01-01",
+		"cl_id" : 1,
+		"date_of_completion" : "2023-01-03"
+	}
+]

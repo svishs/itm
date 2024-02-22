@@ -8,10 +8,11 @@
 test/*
 /*/*test*
 /*/*.odt
-*/venv/*
+venv/*
 *.png
 .mypy_cache/*
 */__pycache__/
 /troubles/*
 .idea/
 */.idea/
+*/*/.env
