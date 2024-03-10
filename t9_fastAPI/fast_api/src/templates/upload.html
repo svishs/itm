@@ -1,0 +1,35 @@
+<script>
+    function previewFile() {
+        const preview = document.querySelector('img');
+        const file = document.querySelector('input[type=file]').files[0];
+        const reader = new FileReader();
+        reader.addEventListener("load", function () {
+        preview.src = reader.result; //show image in <img tag>
+        base64String = reader.result.replace("data:", "").replace(/^.+,/, "");
+        //to prevent plus signs ('+') from being stripped out and replaced by spaces
+        var encodedbase64String = encodeURIComponent(base64String);
+        uploadFile(file.name, encodedbase64String)
+        }, false);
+
+        if (file) {
+            reader.readAsDataURL(file);
+        }
+    }
+    function uploadFile(filename, filedata){
+        var xhr = new XMLHttpRequest();
+        var url = "http://127.0.0.1:8000/upload_doc";
+        xhr.open("POST", url, true);
+        xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+                console.log(xhr.responseText);
+            }
+        };
+        formdata = "filename=" + filename + "&filedata=" + filedata
+        xhr.send(formdata);
+      }
+
+</script>
+<input type="file" onchange="previewFile()"><br>
+<img src="" height="200" alt="Image preview...">
+
