@@ -38,25 +38,21 @@ def about(request): # HttpRequest -содержит информацию о за
     # этого в файле урл.пай
 
 
-def categories(request, cat_id):
-    return HttpResponse(f"<h1>Статьи по категориям</h1><p>id: {cat_id}</p>")
 
-def categories_by_slug(request, cat_slug):
-    if request.GET:
-        print(request.GET)
-    return HttpResponse(f"<h1>Статьи по категориям</h1><p>slug: {cat_slug}</p>")
+def show_post(request, post_id):
+    return HttpResponse(f"Отображение статьи с id = {post_id}")
 
-def archive(request, year):
-    if year > 2024:
-        uri = reverse('cats', args=('music', ))
-        # return HttpResponseRedirect(uri)  # 302
-        # return HttpResponsePermanentRedirect(uri) # 301
-        return redirect(uri)
-        # redirect(index) # редирект через функцию представление
-        # redirect('/', permanent=True) # 301 постоянный
-        # redirect('/') # 302 временный редирект
-        # raise Http404()
-    return HttpResponse(f"<h1>Архив по годам</h1><p>{year}</p>")
+
+def addpage(request):
+    return HttpResponse("Добавление статьи")
+
+
+def contact(request):
+    return HttpResponse("Обратная связь")
+
+
+def login(request):
+    return HttpResponse("Авторизация")
 
 
 def page_not_found(request, exception):
