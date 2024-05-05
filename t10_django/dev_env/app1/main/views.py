@@ -6,16 +6,19 @@ from django.shortcuts import render
 
 def index(request):
     context= {
-        'title': 'Home',
-        'content': 'Главная страница магазина - HOME',
-        'is_authenticated': False,
-        'dict':{
-            'first': 'такие дела'
-        }
+        'title': 'Home - Главная',
+        'content': 'Магазин мебели - HOME',
+
     }
     return render(request, 'main/index.html', context=context)
     # return HttpResponse(' home page ')
 
 def about(request):
-    return HttpResponse(' about page ')
+    context= {
+        'title': 'Home - О нас',
+        'content': 'О нас',
+        'text_on_page': 'что то о магазине'
+
+    }
+    return render(request, 'main/about.html', context=context)
 
