@@ -1,8 +1,19 @@
 from django.core.paginator import Paginator
+from django.db.models import Avg, Count
 from django.shortcuts import get_list_or_404, get_object_or_404, render
 
 from goods.models import Products
 from goods.utils import q_search
+
+def test(request):
+
+    test = Products.objects.values('category').annotate(count=Count('id'))
+
+    test = Products.objects.all().aggregate(Avg('price'))
+    context = {
+        'test': test,
+    }
+    return render(request, "goods/test.html", context)
 
 
 def catalog(request, category_slug=None):   

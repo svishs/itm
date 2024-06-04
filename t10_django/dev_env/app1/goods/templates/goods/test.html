@@ -1,0 +1,18 @@
+<html>
+<body>
+    
+
+{% block content %}
+<div>
+    <ul>
+    {% for item in test %}
+        <li>
+         <p> {{ item }}</p>
+
+        </li>
+    {% endfor %}
+    </ul>
+</div>
+{% endblock content %}
+</body>
+</html>

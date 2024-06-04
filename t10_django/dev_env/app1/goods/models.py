@@ -1,4 +1,4 @@
-from unicodedata import category
+# from unicodedata import category
 from django.db import models
 from django.urls import reverse
 
@@ -30,7 +30,7 @@ class Products(models.Model):
     category = models.ForeignKey(to=Categories, on_delete=models.CASCADE, verbose_name='Категория')
 
 #  protect  - запрет удаления категорий, если есть ссылки на неё в товарах
-#  cascade - каскадное удаление с предупреждением в админ панели
+#  cascade - каскадное удаление с предупреждением в админ панели   
     class Meta:
         db_table = 'product'
         verbose_name = 'Продукт'

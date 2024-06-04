@@ -10,7 +10,7 @@ def index(request):
     # categories = Categories.objects.all()
     context= {
         'title': 'Home - Главная',
-        'content': 'Магазин мебели - HOME',
+        'content': 'Магазин часов - HOME',
         # 'categories': categories,
 
     }

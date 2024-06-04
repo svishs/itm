@@ -1,0 +1,16 @@
+2024-06-04 11:51:22,024 - INFO - middleware - middleware.py - Incoming request:method GET , path /
+2024-06-04 11:51:22,311 - INFO - middleware - middleware.py - Outgoing response: 200 OK
+2024-06-04 11:51:47,177 - INFO - middleware - middleware.py - Incoming request:method GET , path /catalog/all/
+2024-06-04 11:51:47,261 - INFO - middleware - middleware.py - Outgoing response: 200 OK
+2024-06-04 11:51:49,899 - INFO - middleware - middleware.py - Incoming request:method GET , path /user/users-cart/
+2024-06-04 11:51:49,941 - INFO - middleware - middleware.py - Outgoing response: 200 OK
+2024-06-04 11:51:51,627 - INFO - middleware - middleware.py - Incoming request:method GET , path /user/login/
+2024-06-04 11:51:51,670 - INFO - middleware - middleware.py - Outgoing response: 200 OK
+2024-06-04 11:51:57,831 - INFO - middleware - middleware.py - Incoming request:method POST , path /user/login/
+2024-06-04 11:51:59,052 - INFO - middleware - middleware.py - Outgoing response: 302 Found
+2024-06-04 11:51:59,236 - INFO - middleware - middleware.py - Incoming request:method GET , path /
+2024-06-04 11:51:59,367 - INFO - middleware - middleware.py - Outgoing response: 200 OK
+2024-06-04 11:52:09,300 - INFO - middleware - middleware.py - Incoming request:method GET , path /user/profile/
+2024-06-04 11:52:09,376 - INFO - middleware - middleware.py - Outgoing response: 200 OK
+2024-06-04 11:52:23,813 - INFO - middleware - middleware.py - Incoming request:method GET , path /orders/create-order/
+2024-06-04 11:52:23,869 - INFO - middleware - middleware.py - Outgoing response: 200 OK
